@@ -39,10 +39,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <p class="navbar-text navbar-right">
-              <a href="#" class="navbar-link">Home</a>
-              <a href="#" class="navbar-link">About</a>
-              <a href="#" class="navbar-link">Contribute</a>
-              <a href="#" class="navbar-link pcolor">Scilab</a>
+              <a href="#" onclick='$(".main").moveTo(1);' class="navbar-link">Home</a>
+              <a href="#" onclick='$(".main").moveTo(3);' class="navbar-link">About</a>
+              <a href="#" onclick='$(".main").moveTo(5);' class="navbar-link">Contribute</a>
+              <a href="http://scliab.in" target="_blank" class="navbar-link pcolor">Scilab</a>
 
             </p>
         </div><!--/.navbar-collapse -->
@@ -56,11 +56,11 @@
             <section class="intro">
                 <div class="container">
                     <div class="row text-center">
-                        <img src="img/mast-img.svg" class="mast-svg"/>
+                        <img src="img/mast-img.svg" class="mast-svg zoomed"/>
                         <div class="promo-text">
                             An implementation of Scilab on the <span class="petite">GARUDA GRID</span> enabling rapid code execution online
                             <div class="promo-btns">
-                                <a class="btn btn-blue" href="#">Learn More</a>
+                                <a class="btn btn-blue hide-sm" href="#2" onclick='$(".main").moveDown();'>Learn More</a>
                                 <a class="btn btn-blue" href="#">Get Started &nbsp; <span class="fa fa-chevron-right"></span></a>
                             </div>
                         </div>
@@ -97,17 +97,17 @@ the GARUDA Grid, with the help from the GARUDA Team at CDAC, Bengaluru.</p>
   in the input box provided on the interface and execute the same.</li>
                             </ul>
                         </div>
-                        <div class="col-sm-4 graph-lines">
+                        <div class="col-xs-4 graph-lines">
                             <img src="img/graph-lines.svg" />
                         </div>
                     </div>
                     <div class="row text-center how-it-works">
                         <h1>How it <span class="dark-text">Works</span></h1>
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <img src="img/work-1.svg" class="full-width" /><br><br>
                             Your Laptop/PC
                         </div>
-                        <div class="col-md-3 work-progress">
+                        <div class="col-xs-3 work-progress">
                             <div class="progress">
                                 <div class="indeterminate"></div>
                             </div>
@@ -115,11 +115,11 @@ the GARUDA Grid, with the help from the GARUDA Team at CDAC, Bengaluru.</p>
                                 <div class="indeterminate"></div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <img src="img/work-2.svg" class="full-width" /><br><br>
                             The Scilab Cloud
                         </div>
-                        <div class="col-md-3 work-progress">
+                        <div class="col-xs-3 work-progress">
                             <div class="progress">
                                 <div class="indeterminate"></div>
                             </div>
@@ -127,7 +127,7 @@ the GARUDA Grid, with the help from the GARUDA Team at CDAC, Bengaluru.</p>
                                 <div class="indeterminate"></div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <img src="img/servers.svg" class="full-width" /><br><br>
                             <span class="petite">Garuda Grid</span>
                         </div>
@@ -184,11 +184,21 @@ constant wall temperature<br><br>
                             <a class="btn btn-blue btn-white btn-small">Open in Scilab Cloud</a>
                         </div>
                         <div class="col-md-8 example-img-wrap">
-                            <img class="full-width" src="img/Img1.jpg">
+                            <img class="full-width-always" src="img/Img1.jpg">
 
                         </div>
+                        
                     </div>
+                    <div class="arrows">
+                            <div class="left-arrow">
+                                <span class="fa fa-chevron-left"></span>
+                            </div>
+                            <div class="right-arrow">
+                                <span class="fa fa-chevron-right"></span>
+                            </div>
+                        </div>
                 </div>
+                
             </section>
 
 
@@ -216,7 +226,7 @@ software in educational institutions.
                             </p><br><p>
 We encourage the use of FOSS tools through various activities to ensure commercial software
 is replaced by equivalent FOSS tools. We also develop new FOSS tools and upgrade existing tools
-to meet requirements in academia and research. </p>
+to meet requirements in academia and research. </p><br><br><br>
                         </div>
                     </div>
                 </div>

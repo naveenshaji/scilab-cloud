@@ -22,6 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+
+
+html, body {
+    overflow-x: hidden;
+}
 * {
     text-shadow: none!important;
     font-family: 'Roboto', sans-serif;
@@ -238,6 +243,7 @@ li {
 }
 .examples-sec {
     margin-top: 10vh;
+    padding-left: 20px
 }
 .examples-sub {
     margin-top: -30px;
@@ -639,11 +645,11 @@ h1.small {
     padding-bottom: 10px;
 }
 .example-img-wrap {
-    padding-top: 70px;
+    padding-top: 3vh;
 }
 .example-text-wrap {
     color: #fff;
-    padding-top: 170px;
+    padding-top: 10vh;
     font-weight: 300;
 }
 .fullscreen {
@@ -656,6 +662,90 @@ h1.small {
     height: 100vh;
     position: absolute;
 }
-@media screen and (max-width: 1440px) {
+.full-width-always {
+    width: 100%;
+}
+.navbar-inverse .navbar-toggle .icon-bar{ 
+    background: #36c2de;
+}
+.arrows {
+    position: relative;
+    top: -40vh;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #ccc;
+    width: 100%;
+}
+.left-arrow {
+    float: left;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.right-arrow {
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
 
+
+
+
+
+@media screen and (min-width: 991px) {
+    .mast-svg, .promo-text, .how-it-works, .examples-wrapper, .arrows {
+        display: none;
+    }
+    .work-progress {
+        opacity: 0;
+    }
+    .mast-svg {
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        opacity: 0;
+    }
+    .zoomed {
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    p, ul, .example-text-wrap {
+        font-size: 12px!important;
+        line-height: 16px!important;
+    }
+    .how-it-works {
+        margin-top: 0px;
+    }
+    .full-width {
+        width: 80%;
+    }
+    .examples-wrapper {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+}
+@media screen and (max-width: 991px) {
+    section {
+        min-height: 100vh;
+        height: auto!important;
+    }
+    .example-text-wrap {
+        font-size: 10px;
+    }
+    .example-img-wrap {
+        display: none;
+    }
+    .hide-sm {
+        display: none;
+    }
+    .examples-wrapper {
+        background: #36c2de;
+    }
+    .example-text-wrap {
+        padding: 10px;
+    }
 }
