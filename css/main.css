@@ -722,6 +722,30 @@ h1.small {
 
 
 
+
+
+
+
+
+@media screen and (max-height: 1000px) {
+p, ul, .example-text-wrap {
+        font-size: 12px!important;
+        line-height: 16px!important;
+    }
+    .how-it-works {
+        margin-top: 0px;
+    }
+    .full-width {
+        width: 80%;
+    }
+    .examples-wrapper {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+
+
+
 @media screen and (max-width: 1440px) {
     .container-app-main {
         height: 60vh;
