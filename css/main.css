@@ -1320,4 +1320,10 @@ input[type="search"] { /* reset normalize */
     top: 10px;
     padding: 5px;
     font-size: 11px;
+    z-index: 999;
+}
+.login-button > a {
+    color: #36c2de;
+    cursor: pointer;
+    text-decoration: none;
 }
