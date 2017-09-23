@@ -1313,3 +1313,11 @@ input[type="search"] { /* reset normalize */
 .link:hover {
     text-decoration: none;
 }
+
+.login-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 5px;
+    font-size: 11px;
+}
