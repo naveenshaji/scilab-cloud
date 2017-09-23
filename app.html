@@ -556,8 +556,22 @@ granted exclusive rights for Scilab Trademark.</p>
                                 <div class="expand-btn">
                                     <span class="fa fa-expand"></span>
                                 </div>
-                                Scilab Code
-                                <a class="btn btn-blue btn-white btn-execute">EXECUTE <span class="fa fa-gears"></span></a>
+                                <div class="styled-select slate">
+                                  <select id="">
+                                    <option selected>Version 1.82alpha</option>
+                                    <option>The second option</option>
+                                    <option>The third option</option>
+                                  </select>
+                                </div>
+                                vs
+                                <div class="styled-select slate">
+                                  <select id="verselect">
+                                    <option value="" disabled selected>Compare with</option>
+                                    <option>Version 1.82alpha</option>
+                                    <option>The second option</option>
+                                    <option>The third option</option>
+                                  </select>
+                                </div>
                             </div>
                             <div class="code-footer">
                                 <div class="code-footer-item col-md-6">
@@ -580,6 +594,7 @@ granted exclusive rights for Scilab Trademark.</p>
                                     <span class="fa fa-expand"></span>
                                 </div>
                                 Result
+                                <a class="btn btn-blue btn-white btn-execute">EXECUTE <span class="fa fa-gears"></span></a>
                                 <a class="btn btn-blue btn-white btn-execute">DOWNLOAD <span class="fa fa-download"></span></a>
                             </div>
                             <div id="handle"></div>
@@ -724,9 +739,63 @@ $(function () {
             $('#intro-page').hide(300);
             $('#wrap-page').show(300);
         })
+        $('#verselect').change(function(){
+            $('#myModal').modal({
+                show: true
+            });
+        });
+
 		</script>
 
     <!--    <script src="js/main.js"></script>-->
+
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Diff</h4>
+      </div>
+      <div class="modal-body">
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </body>
 
 </html>

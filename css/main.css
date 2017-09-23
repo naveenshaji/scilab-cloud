@@ -1327,3 +1327,19 @@ input[type="search"] { /* reset normalize */
     cursor: pointer;
     text-decoration: none;
 }
+.styled-select {
+    display: inline-block;
+}
+.styled-select > select {
+    background: #fff;
+    border: none;
+    width: 170px;
+    outline: none;
+}
+.modal-content {
+    box-shadow: none;
+    border-radius: 0px;
+}
+.modal {
+    z-index: 99999;
+}
