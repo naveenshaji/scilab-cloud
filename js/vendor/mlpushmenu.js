@@ -192,6 +192,7 @@
 					}
 				}
 			}
+            this.open = true;
 			// add class mp-pushed to main wrapper if opening the first time
 			if( this.level === 1 ) {
 				classie.add( this.wrapper, 'mp-pushed' );
@@ -203,10 +204,9 @@
 		// close the menu
 		_resetMenu : function() {
 			this._setTransform('translate3d(0,0,0)');
-			this.level = 0;
+			this.level--;
 			// remove class mp-pushed from main wrapper
 			classie.remove( this.wrapper, 'mp-pushed' );
-			this._toggleLevels();
 			this.open = false;
 		},
 		// close sub menus
